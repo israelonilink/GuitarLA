@@ -7,17 +7,14 @@ import Guit from './components/Guitarra.vue'
 import Guitarra from "./components/Guitarra.vue";
 
 const guitarras = ref([])
-/*
-const state = reactive({
-  guitarras: []
-})
-*/
-
 
 onMounted(() => {
   guitarras.value = db;
-  //state.guitarras = db;
 })
+
+const incrementar = () => {
+  alert('Diste click')
+}
 
 </script>
 
